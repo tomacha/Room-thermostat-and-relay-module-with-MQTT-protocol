@@ -1,0 +1,420 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensor_Temperature:DS18B20 U1
+U 1 1 61534364
+P 7900 2100
+F 0 "U1" H 7670 2146 50  0000 R CNN
+F 1 "DS18B20" H 7670 2055 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6900 1850 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 7750 2350 50  0001 C CNN
+	1    7900 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6153E64B
+P 8450 1850
+F 0 "R1" H 8520 1896 50  0000 L CNN
+F 1 "4,7k" H 8520 1805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8380 1850 50  0001 C CNN
+F 3 "~" H 8450 1850 50  0001 C CNN
+	1    8450 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 5600 3750 5500
+Wire Wire Line
+	3850 5600 3850 5500
+Wire Wire Line
+	3850 5600 3800 5600
+NoConn ~ 4250 4000
+NoConn ~ 4250 3900
+NoConn ~ 4250 4300
+NoConn ~ 3250 5200
+NoConn ~ 3250 5100
+NoConn ~ 3250 5000
+NoConn ~ 3250 4700
+NoConn ~ 3250 4600
+NoConn ~ 3250 4500
+NoConn ~ 3250 4400
+NoConn ~ 3250 4300
+NoConn ~ 3250 4200
+NoConn ~ 3250 4100
+NoConn ~ 3950 3500
+Wire Wire Line
+	3800 5800 3800 5600
+Connection ~ 3800 5600
+Wire Wire Line
+	3800 5600 3750 5600
+Text GLabel 4350 4700 2    50   Output ~ 0
+RXD
+Text GLabel 4350 4900 2    50   Output ~ 0
+PDN
+Text GLabel 4350 5000 2    50   Output ~ 0
+WAKEUP
+Text GLabel 4350 4800 2    50   Input ~ 0
+INT
+Text GLabel 8700 2100 2    50   BiDi ~ 0
+DQ
+Text GLabel 4350 4500 2    50   BiDi ~ 0
+DQ
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 616E4F4F
+P 8450 1600
+F 0 "#PWR0105" H 8450 1450 50  0001 C CNN
+F 1 "+3.3V" H 8465 1773 50  0000 C CNN
+F 2 "" H 8450 1600 50  0001 C CNN
+F 3 "" H 8450 1600 50  0001 C CNN
+	1    8450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 616EE6FF
+P 7900 2500
+F 0 "#PWR0109" H 7900 2250 50  0001 C CNN
+F 1 "GND" H 7905 2327 50  0000 C CNN
+F 2 "" H 7900 2500 50  0001 C CNN
+F 3 "" H 7900 2500 50  0001 C CNN
+	1    7900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 616F1CAC
+P 3800 5800
+F 0 "#PWR0112" H 3800 5550 50  0001 C CNN
+F 1 "GND" H 3805 5627 50  0000 C CNN
+F 2 "" H 3800 5800 50  0001 C CNN
+F 3 "" H 3800 5800 50  0001 C CNN
+	1    3800 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4500 4250 4500
+Wire Wire Line
+	4350 4700 4250 4700
+Wire Wire Line
+	4350 4800 4250 4800
+Wire Wire Line
+	4350 4900 4250 4900
+Wire Wire Line
+	4250 5000 4350 5000
+Wire Wire Line
+	4250 5200 4350 5200
+Text GLabel 4350 5200 2    50   Input ~ 0
+TXD
+NoConn ~ 3250 4000
+NoConn ~ 3250 3900
+NoConn ~ 3250 4800
+NoConn ~ 3250 4900
+NoConn ~ 4250 4600
+$Comp
+L MCU_Module:Arduino_Nano_v2.x A1
+U 1 1 61530DE8
+P 3750 4500
+F 0 "A1" H 3750 3411 50  0000 C CNN
+F 1 "STM32L432KC Nucleo-32" H 3750 3320 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 3750 4500 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/uploads/Main/ArduinoNanoManual23.pdf" H 3750 4500 50  0001 C CNN
+	1    3750 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0113
+U 1 1 6197BE77
+P 7900 1600
+F 0 "#PWR0113" H 7900 1450 50  0001 C CNN
+F 1 "+3.3V" H 7915 1773 50  0000 C CNN
+F 2 "" H 7900 1600 50  0001 C CNN
+F 3 "" H 7900 1600 50  0001 C CNN
+	1    7900 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 2100 8450 2100
+Wire Wire Line
+	8450 2000 8450 2100
+Connection ~ 8450 2100
+Wire Wire Line
+	8450 2100 8700 2100
+Wire Wire Line
+	8450 1700 8450 1600
+NoConn ~ 4250 5100
+Text GLabel 3850 3350 1    50   Input ~ 0
+3V3
+Text GLabel 3650 3350 1    50   Input ~ 0
+VIN
+Connection ~ 8900 5150
+Wire Wire Line
+	8900 5300 8900 5150
+Wire Wire Line
+	8900 4800 8900 5150
+Wire Wire Line
+	8900 4800 8900 4700
+Connection ~ 8900 4800
+Wire Wire Line
+	8750 4800 8900 4800
+Wire Wire Line
+	8900 4700 8750 4700
+Wire Wire Line
+	8550 5150 8900 5150
+Wire Wire Line
+	8050 5300 8050 5150
+Wire Wire Line
+	7450 4600 7850 4600
+Wire Wire Line
+	7450 4650 7450 4600
+$Comp
+L power:GND #PWR0111
+U 1 1 616F1057
+P 7450 4650
+F 0 "#PWR0111" H 7450 4400 50  0001 C CNN
+F 1 "GND" H 7455 4477 50  0000 C CNN
+F 2 "" H 7450 4650 50  0001 C CNN
+F 3 "" H 7450 4650 50  0001 C CNN
+	1    7450 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 616EF924
+P 8900 5300
+F 0 "#PWR0110" H 8900 5050 50  0001 C CNN
+F 1 "GND" H 8905 5127 50  0000 C CNN
+F 2 "" H 8900 5300 50  0001 C CNN
+F 3 "" H 8900 5300 50  0001 C CNN
+	1    8900 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0106
+U 1 1 616E5BB2
+P 7700 5300
+F 0 "#PWR0106" H 7700 5150 50  0001 C CNN
+F 1 "+3.3V" H 7715 5473 50  0000 C CNN
+F 2 "" H 7700 5300 50  0001 C CNN
+F 3 "" H 7700 5300 50  0001 C CNN
+	1    7700 5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 8200 5150 3    50   Input ~ 0
+WAKEUP
+Text GLabel 8750 4600 2    50   Output ~ 0
+INT
+Text GLabel 7850 4800 0    50   Input ~ 0
+RXD
+Text GLabel 7850 4700 0    50   Output ~ 0
+TXD
+Text GLabel 8400 5150 3    50   Input ~ 0
+PDN
+$Comp
+L HM-BT4502:HM-BT4502 U2
+U 1 1 61535760
+P 8300 4100
+F 0 "U2" H 8300 4215 50  0000 C CNN
+F 1 "HM-BT4502" H 8300 4124 50  0000 C CNN
+F 2 "HM-BT4502:HM-BT4502" H 8300 4100 50  0001 C CNN
+F 3 "" H 8300 4100 50  0001 C CNN
+	1    8300 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 2400 7900 2500
+Wire Wire Line
+	7900 1600 7900 1800
+Wire Wire Line
+	3850 3350 3850 3500
+Wire Wire Line
+	3650 3350 3650 3500
+Wire Wire Line
+	8050 5300 7700 5300
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 61D7C69D
+P 5100 1700
+AR Path="/61D7C69D" Ref="J1"  Part="1" 
+AR Path="/61D4CE14/61D7C69D" Ref="J?"  Part="1" 
+F 0 "J1" H 5208 1881 50  0000 C CNN
+F 1 "Batt Conn" H 5208 1790 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5100 1700 50  0001 C CNN
+F 3 "~" H 5100 1700 50  0001 C CNN
+	1    5100 1700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 61D7C6A3
+P 2600 2500
+AR Path="/61D7C6A3" Ref="J2"  Part="1" 
+AR Path="/61D4CE14/61D7C6A3" Ref="J?"  Part="1" 
+F 0 "J2" H 2800 2800 50  0000 C CNN
+F 1 "MC_PWR_SEL" H 2800 2700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2600 2500 50  0001 C CNN
+F 3 "~" H 2600 2500 50  0001 C CNN
+	1    2600 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2600 3150 2600
+$Comp
+L Pololu_3.3V_Step-Up_Voltage_Regulator_U1V10F3:U1V10F3 U3
+U 1 1 61D7C6AA
+P 2400 1800
+AR Path="/61D7C6AA" Ref="U3"  Part="1" 
+AR Path="/61D4CE14/61D7C6AA" Ref="U?"  Part="1" 
+F 0 "U3" V 2765 1267 50  0000 C CNN
+F 1 "U1V10F3" V 2674 1267 50  0000 C CNN
+F 2 "U1V10F3:U1V10F3" H 2400 1800 50  0001 C CNN
+F 3 "" H 2400 1800 50  0001 C CNN
+	1    2400 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3250 1700 3950 1700
+Wire Wire Line
+	3250 1800 3950 1800
+Wire Wire Line
+	3250 1900 3350 1900
+$Comp
+L power:GND #PWR?
+U 1 1 61D7C6B3
+P 3950 2000
+AR Path="/61D7C6B3" Ref="#PWR?"  Part="1" 
+AR Path="/61D4CE14/61D7C6B3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3950 1750 50  0001 C CNN
+F 1 "GND" H 3955 1827 50  0000 C CNN
+F 2 "" H 3950 2000 50  0001 C CNN
+F 3 "" H 3950 2000 50  0001 C CNN
+	1    3950 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2000 3950 1900
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61D7C6BA
+P 3650 2050
+AR Path="/61D7C6BA" Ref="#PWR?"  Part="1" 
+AR Path="/61D4CE14/61D7C6BA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3650 1900 50  0001 C CNN
+F 1 "+3.3V" H 3665 2223 50  0000 C CNN
+F 2 "" H 3650 2050 50  0001 C CNN
+F 3 "" H 3650 2050 50  0001 C CNN
+	1    3650 2050
+	1    0    0    -1  
+$EndComp
+Connection ~ 3950 1900
+Connection ~ 3950 1600
+Wire Wire Line
+	3950 1500 3950 1600
+$Comp
+L power:+BATT #PWR?
+U 1 1 61D7C6C3
+P 3950 1500
+AR Path="/61D7C6C3" Ref="#PWR?"  Part="1" 
+AR Path="/61D4CE14/61D7C6C3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3950 1350 50  0001 C CNN
+F 1 "+BATT" H 3965 1673 50  0000 C CNN
+F 2 "" H 3950 1500 50  0001 C CNN
+F 3 "" H 3950 1500 50  0001 C CNN
+	1    3950 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 1600 3950 1700
+Wire Wire Line
+	4150 1600 3950 1600
+Wire Wire Line
+	3950 1900 4150 1900
+Wire Wire Line
+	3950 1800 3950 1900
+$Comp
+L Device:CP C1
+U 1 1 61D7C6CD
+P 4150 1750
+AR Path="/61D7C6CD" Ref="C1"  Part="1" 
+AR Path="/61D4CE14/61D7C6CD" Ref="C?"  Part="1" 
+F 0 "C1" H 4268 1796 50  0000 L CNN
+F 1 "33u" H 4268 1705 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 4188 1600 50  0001 C CNN
+F 3 "~" H 4150 1750 50  0001 C CNN
+	1    4150 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1700 4700 1700
+Wire Wire Line
+	4700 1700 4700 1600
+Wire Wire Line
+	4700 1600 4150 1600
+Connection ~ 4150 1600
+Wire Wire Line
+	4900 1800 4700 1800
+Wire Wire Line
+	4700 1800 4700 1900
+Wire Wire Line
+	4700 1900 4150 1900
+Connection ~ 4150 1900
+$Comp
+L Device:C C2
+U 1 1 61D7C6DB
+P 3650 2350
+AR Path="/61D7C6DB" Ref="C2"  Part="1" 
+AR Path="/61D4CE14/61D7C6DB" Ref="C?"  Part="1" 
+F 0 "C2" H 3765 2396 50  0000 L CNN
+F 1 "100n" H 3765 2305 50  0000 L CNN
+F 2 "" H 3688 2200 50  0001 C CNN
+F 3 "~" H 3650 2350 50  0001 C CNN
+	1    3650 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D7C6E1
+P 3650 2500
+AR Path="/61D7C6E1" Ref="#PWR?"  Part="1" 
+AR Path="/61D4CE14/61D7C6E1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3650 2250 50  0001 C CNN
+F 1 "GND" H 3655 2327 50  0000 C CNN
+F 2 "" H 3650 2500 50  0001 C CNN
+F 3 "" H 3650 2500 50  0001 C CNN
+	1    3650 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2500 3350 2500
+Wire Wire Line
+	3350 1900 3350 2150
+Wire Wire Line
+	3350 2150 3650 2150
+Wire Wire Line
+	3650 2150 3650 2050
+Connection ~ 3350 2150
+Wire Wire Line
+	3350 2150 3350 2500
+Wire Wire Line
+	3650 2150 3650 2200
+Connection ~ 3650 2150
+Wire Wire Line
+	2800 2400 3150 2400
+Text GLabel 3150 2400 2    50   Input ~ 0
+VIN
+Text GLabel 3150 2600 2    50   Input ~ 0
+3V3
+$EndSCHEMATC

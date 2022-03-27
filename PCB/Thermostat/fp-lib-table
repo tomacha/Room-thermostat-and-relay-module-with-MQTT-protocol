@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name HM-BT4502)(type KiCad)(uri C:/Users/tomac/Desktop/Inzynierka/PCB/hm-bt4502/HM-BT4502.pretty)(options "")(descr ""))
+  (lib (name U1V10F3)(type KiCad)(uri C:/Users/tomac/Desktop/Inzynierka/PCB/Pololu_3.3V_Step-Up_Voltage_Regulator_U1V10F3/U1V10F3.pretty)(options "")(descr ""))
+)

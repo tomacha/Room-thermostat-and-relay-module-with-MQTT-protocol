@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name esp32_devkit_v1_doit)(type Legacy)(uri C:/Users/tomac/Desktop/Inzynierka/PCB/esp32_devkit_v1_doit/esp32_devkit_v1_doit.lib)(options "")(descr ""))
+  (lib (name MPI-S-105-C-3)(type Legacy)(uri C:/Users/tomac/Desktop/Inzynierka/PCB/MPI-S-105-C-3/MPI-S-105-C-3.lib)(options "")(descr ""))
+)

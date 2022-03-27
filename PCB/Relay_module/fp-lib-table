@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name MPI-S-105-C-3)(type KiCad)(uri C:/Users/tomac/Desktop/Inzynierka/PCB/MPI-S-105-C-3/MPI-S-105-C-3.pretty)(options "")(descr ""))
+  (lib (name esp32_devkit_v1_doit)(type KiCad)(uri C:/Users/tomac/Desktop/Inzynierka/PCB/esp32_devkit_v1_doit/esp32_devkit_v1_doit.pretty)(options "")(descr ""))
+)

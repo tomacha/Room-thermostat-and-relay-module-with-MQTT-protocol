@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name HM-BT4502)(type Legacy)(uri C:/Users/tomac/Desktop/Inzynierka/PCB/hm-bt4502/HM-BT4502.lib)(options "")(descr ""))
+  (lib (name Pololu_3.3V_Step-Up_Voltage_Regulator_U1V10F3)(type Legacy)(uri C:/Users/tomac/Desktop/Inzynierka/PCB/Pololu_3.3V_Step-Up_Voltage_Regulator_U1V10F3/Pololu_3.3V_Step-Up_Voltage_Regulator_U1V10F3.lib)(options "")(descr ""))
+  (lib (name termostat-rescue)(type Legacy)(uri ${KIPRJMOD}/termostat-rescue.lib)(options "")(descr ""))
+)

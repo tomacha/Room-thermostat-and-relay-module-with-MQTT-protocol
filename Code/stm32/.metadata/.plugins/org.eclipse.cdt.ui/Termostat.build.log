@@ -1,0 +1,10 @@
+18:27:59 **** Build of configuration Debug for project Termostat ****
+make -j8 all 
+arm-none-eabi-size   Termostat.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28428	    764	   1884	  31076	   7964	Termostat.elf
+Finished building: default.size.stdout
+ 
+
+18:28:00 Build Finished. 0 errors, 0 warnings. (took 875ms)
+
